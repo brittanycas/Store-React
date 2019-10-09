@@ -1,0 +1,35 @@
+a, a:link, a:visited, a:focus{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #00ccff
+}
+
+.App-nav {
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: calc(10px + 2vmin);
+  color: white;
+  line-height: 70px;
+  height: 80px;
+}
+
+.nav-content{
+  display: inline;
+  vertical-align: middle;
+}
+
+.nav-left{
+  font-size: 32px;
+  padding: 5px;
+}
+
+.nav-right{
+  font-size: 32px;
+  padding: 5px;
+  justify-self: end;
+  grid-column: 4 / 5;
+}
+
