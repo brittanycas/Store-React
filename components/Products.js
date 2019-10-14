@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-//Need to get product list from API
+//Individual product
 
 export default class Products extends Component {
     render() {

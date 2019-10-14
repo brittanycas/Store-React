@@ -1,17 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar'
-import Products from './components/Products'
-import Cart from './components/Cart'
+import Navbar from './components/Navbar';
+import ProductList from './components/ProductList'
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Products}></Route>
-        <Route path="/cart" component={Cart}></Route>
+        <Route exact path="/" component={ProductList}></Route>
+        
       </Switch>
     </div>
   );
