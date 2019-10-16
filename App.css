@@ -32,4 +32,19 @@ a:hover{
   justify-self: end;
   grid-column: 4 / 5;
 }
+.productList{
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+}
 
+.productWindow{
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  border: 1px black solid;
+  background: #ffffff
+}

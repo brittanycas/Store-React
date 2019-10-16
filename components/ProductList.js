@@ -4,12 +4,20 @@ import { ProductConsumer } from '../context'
 export default class ProductList extends Component {
     render() {
         return (
-            <div>
+            <div className="productList">
                 <ProductConsumer>
                     {value => {
                         if(value.length !== 0){
-                            console.log(value.length)
-                            return <h1>{value[0].name}</h1>
+                            return value.map(el => {
+                                return (
+                                    <div className="productWindow">
+                                        <h2>{el.name}</h2>
+                                        <h3>{el.tagline}</h3>
+                                        <img src={el.image_url} alt="bottle" height="120px"></img>
+                                        <p>{el.description.slice(0,80)}...</p>
+                                    </div>
+                                )
+                            })
                         } else {
                             return <h1>null</h1>
                         }
