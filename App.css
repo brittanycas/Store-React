@@ -8,29 +8,38 @@ a:hover{
 
 .App-nav {
   background-color: #282c34;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
   font-size: calc(10px + 2vmin);
   color: white;
   line-height: 70px;
   height: 80px;
+  width: 100%;
 }
 
 .nav-content{
-  display: inline;
   vertical-align: middle;
+  display: inline;
+  margin: auto;
 }
 
 .nav-left{
   font-size: 32px;
-  padding: 5px;
-}
+  padding: 5px 15px;
+  }
 
 .nav-right{
   font-size: 32px;
-  padding: 5px;
-  justify-self: end;
-  grid-column: 4 / 5;
+  padding: 5px 15px;
+  position: absolute;
+  right: 5px;
+}
+
+.productList{
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .productList{
   margin: auto;
@@ -45,6 +54,12 @@ a:hover{
   width: 300px;
   height: 350px;
   text-align: center;
+<<<<<<< HEAD
+  border: 1px #282c34 solid;
+  background: #ebebeb;
+  overflow: hidden;
+=======
   border: 1px black solid;
   background: #ffffff
+>>>>>>> 71643be992b546e900d9463b20644dc1b11589c4
 }
